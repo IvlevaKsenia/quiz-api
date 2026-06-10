@@ -1,0 +1,28 @@
+
+### Реєстрація нового користувача
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+  "username": "testUser",
+  "password": "mysecretpassword123"
+}
+
+###  Вхід (Логін)
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+  "username": "testUser",
+  "password": "mysecretpassword123"
+}
+
+### 
+# Це очистить всі питання і додасть нові
+POST http://localhost:5000/api/questions/seed
+
+### Отримати всі питання
+GET http://localhost:5000/api/questions
+
+###  Отримати легкі питання
+GET http://localhost:5000/api/questions?difficulty=easy
